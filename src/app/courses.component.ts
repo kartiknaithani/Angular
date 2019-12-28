@@ -1,13 +1,15 @@
 
 import { Component } from '@angular/core';
 import { CoursesService } from './courses.service'
+import { FavoriteComponent } from './favorite.component';
+import { fchmod } from 'fs';
 
 @Component({
 selector: 'courses',
 template : `<h1 (mouseenter)="onClick()">{{title}}</h1>
 <input [value]="email" (keyup.enter)="email=$event.target.value; onPress()"/>
 <input [(ngModel)]="email" (keyup.enter)="onPress()"/>
-<button class="btn btn-primary" [style.backgroundColor]="isActive==true? 'green':'blue'" (mouseenter)="onClick()">Save</button>
+<button class="btn btn-primary" [style.backgroundColor]="isActive==true? 'green':'blue'" (click)="onClick()">Save</button>
 `
 })
 export class CoursesComponent
@@ -17,7 +19,7 @@ export class CoursesComponent
   isActive=true;
   courses;
   colspan=2;
-  imgsrc="https://seeklogo.com/images/A/Adobe-logo-14D7FF4DA5-seeklogo.com.png"
+  imgsrc="https://seeklogo.com/images/A/Adobe-logo-14D7FF4DA5-seeklogo.com.png";
   onClick()
   {
     this.isActive=!this.isActive;

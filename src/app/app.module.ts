@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CoursesService } from './courses.service';
 import { FavoriteComponent } from './favorite.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +21,4 @@ import { FavoriteComponent } from './favorite.component';
   providers: [CoursesService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

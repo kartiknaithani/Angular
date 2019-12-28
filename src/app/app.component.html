@@ -1,4 +1,22 @@
-<h1>Angular</h1>
+<!-- <h1>Angular</h1>
 <courses></courses>
 <br>
-<favorite></favorite>
+<favorite [isFavorite] = "false" (change1) = "onFavoriteChanged($event)"></favorite> -->
+
+<!-- <bootstrap-panel>
+    
+    <h1 class="heading">Heading</h1>
+    <ng-container class="body">
+        <h2>BODY</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, pariatur cum esse quasi impedit dolore magnam inventore saepe cumque distinctio modi veniam reiciendis, non ut eaque accusantium eius numquam necessitatibus fugit! Magnam, eos iusto. Nesciunt assumenda repellendus nisi sequi itaque reiciendis velit. Labore esse voluptas vel suscipit architecto in adipisci maiores doloribus provident facere ex accusantium repellendus, tempore incidunt saepe voluptate! Dolorem quas quod iure, exercitationem magnam fugit assumenda nemo, aperiam officia possimus dolore laudantium vel modi rerum velit qui dolorum molestias harum a sunt! Doloremque ab repellat, dolor, saepe delectus possimus deleniti earum reiciendis vel ullam sint? Explicabo, rerum consectetur? Fuga, laboriosam quis dolorum sunt corrupti earum eius cupiditate autem hic qui aliquam recusandae corporis labore enim quod placeat eos temporibus beatae atque repellat non architecto iste facilis quisquam! Minus perspiciatis aspernatur nisi rem pariatur excepturi eveniet quibusdam eos, cum placeat recusandae voluptatibus tenetur tempore molestiae, perferendis delectus velit praesentium consectetur, dignissimos natus ipsa. Rerum perspiciatis odio reprehenderit quia quis optio possimus, velit temporibus tempore vitae nesciunt harum, distinctio animi qui a excepturi voluptate itaque sit soluta aliquid. Animi repudiandae corrupti cumque autem cupiditate saepe maxime nesciunt sunt sed id vitae, eligendi numquam rerum dolorem modi enim dicta nihil nulla, dolor accusamus in. Accusamus repudiandae est accusantium esse cupiditate quas dolores eveniet a officiis iusto quo impedit, delectus debitis laboriosam dignissimos itaque hic, sapiente consequatur eum harum earum ex nobis voluptatum et. Nostrum repellendus consectetur saepe blanditiis! Suscipit ad saepe quisquam, neque reprehenderit excepturi perferendis ducimus praesentium similique, voluptatibus quis ratione fuga repudiandae quas tempora quam? Illum, voluptatem cumque vitae debitis aspernatur deserunt fugiat reiciendis harum minima. Commodi tempore aliquid dignissimos quo beatae repellendus corporis quaerat id necessitatibus placeat voluptatem autem, fugiat aspernatur voluptas quos animi veritatis cupiditate illo laudantium voluptatibus accusamus nulla suscipit nobis? Magnam maiores odit deleniti?</p>
+    </ng-container>
+</bootstrap-panel> -->
+<ul class="nav nav-pills">
+    <li [class.active]="view=='map'"><a href="">Map View</a></li>
+    <li [class.active]="view=='list'"><a href="">List View</a></li>
+</ul>
+<div [ngSwitch]="view">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+</div>
+<favorite [isFavorite]=false></favorite>

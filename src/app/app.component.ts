@@ -1,3 +1,4 @@
+import { FavoriteComponent, argsFavoriteChanged } from './favorite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-world';
+  view= 'map';
+  onFavoriteChanged(dataEvenObject: argsFavoriteChanged)
+  {
+    console.log("Favorite changed: ",dataEvenObject);
+  }
 }
+
